@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,44 +41,54 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBSW2M9M7n_2mqNRv86ue5F1GMpOE_7WRs',
-    appId: '1:98452995691:web:48c28b31308e8d8d777b2e',
-    messagingSenderId: '98452995691',
-    projectId: 'anpr-762d0',
-    authDomain: 'anpr-762d0.firebaseapp.com',
-    databaseURL: 'https://anpr-762d0-default-rtdb.firebaseio.com',
-    storageBucket: 'anpr-762d0.appspot.com',
-    measurementId: 'G-VS4PPWVQ1N',
+    apiKey: 'AIzaSyB8VOj1ySALVy5drSXH49qrHSB1xTS8OV4',
+    appId: '1:332404621943:web:3e1e3116807818c0b73c72',
+    messagingSenderId: '332404621943',
+    projectId: 'anpr-database-da01c',
+    authDomain: 'anpr-database-da01c.firebaseapp.com',
+    databaseURL: 'https://anpr-database-da01c-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'anpr-database-da01c.firebasestorage.app',
+    measurementId: 'G-CQX9VMYM7J',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBXhLiLvGD7etWISFWWokuoKabHU18ZWzw',
-    appId: '1:98452995691:android:c9022e3b2a755e58777b2e',
-    messagingSenderId: '98452995691',
-    projectId: 'anpr-762d0',
-    databaseURL: 'https://anpr-762d0-default-rtdb.firebaseio.com',
-    storageBucket: 'anpr-762d0.appspot.com',
+    apiKey: 'AIzaSyDP4ali8ij-kFRSi5Ah7J8h4Dqjc4sE9ds',
+    appId: '1:332404621943:android:8adfe1245c043371b73c72',
+    messagingSenderId: '332404621943',
+    projectId: 'anpr-database-da01c',
+    databaseURL: 'https://anpr-database-da01c-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'anpr-database-da01c.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC6kqrjKiMmUpBio1MNaDg5dmrKPmcCS3c',
-    appId: '1:98452995691:ios:6f2f1b7ac26964ed777b2e',
-    messagingSenderId: '98452995691',
-    projectId: 'anpr-762d0',
-    databaseURL: 'https://anpr-762d0-default-rtdb.firebaseio.com',
-    storageBucket: 'anpr-762d0.appspot.com',
-    iosClientId: '98452995691-vbv6h5jlpi5jgijjmdohsa3asoje8kq3.apps.googleusercontent.com',
+    apiKey: 'AIzaSyAbh-cF2xIzlS-nTKbkRZ7iz6JXUgkjnS0',
+    appId: '1:332404621943:ios:369627fb6df34096b73c72',
+    messagingSenderId: '332404621943',
+    projectId: 'anpr-database-da01c',
+    databaseURL: 'https://anpr-database-da01c-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'anpr-database-da01c.firebasestorage.app',
     iosBundleId: 'com.example.anpr',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC6kqrjKiMmUpBio1MNaDg5dmrKPmcCS3c',
-    appId: '1:98452995691:ios:ed4435a1b62bd244777b2e',
-    messagingSenderId: '98452995691',
-    projectId: 'anpr-762d0',
-    databaseURL: 'https://anpr-762d0-default-rtdb.firebaseio.com',
-    storageBucket: 'anpr-762d0.appspot.com',
-    iosClientId: '98452995691-fh7u9pj2u2jt3o7j195tsqj14rnkr0p1.apps.googleusercontent.com',
-    iosBundleId: 'com.example.anpr.RunnerTests',
+    apiKey: 'AIzaSyAbh-cF2xIzlS-nTKbkRZ7iz6JXUgkjnS0',
+    appId: '1:332404621943:ios:369627fb6df34096b73c72',
+    messagingSenderId: '332404621943',
+    projectId: 'anpr-database-da01c',
+    databaseURL: 'https://anpr-database-da01c-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'anpr-database-da01c.firebasestorage.app',
+    iosBundleId: 'com.example.anpr',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyB8VOj1ySALVy5drSXH49qrHSB1xTS8OV4',
+    appId: '1:332404621943:web:4f58982347f875a1b73c72',
+    messagingSenderId: '332404621943',
+    projectId: 'anpr-database-da01c',
+    authDomain: 'anpr-database-da01c.firebaseapp.com',
+    databaseURL: 'https://anpr-database-da01c-default-rtdb.asia-southeast1.firebasedatabase.app',
+    storageBucket: 'anpr-database-da01c.firebasestorage.app',
+    measurementId: 'G-XLEM1K9HMF',
+  );
+
 }

@@ -1,37 +1,27 @@
 {
   "project_info": {
-    "project_number": "98452995691",
-    "firebase_url": "https://anpr-762d0-default-rtdb.firebaseio.com",
-    "project_id": "anpr-762d0",
-    "storage_bucket": "anpr-762d0.appspot.com"
+    "project_number": "332404621943",
+    "firebase_url": "https://anpr-database-da01c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "anpr-database-da01c",
+    "storage_bucket": "anpr-database-da01c.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:98452995691:android:c9022e3b2a755e58777b2e",
+        "mobilesdk_app_id": "1:332404621943:android:8adfe1245c043371b73c72",
         "android_client_info": {
           "package_name": "com.example.anpr"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "98452995691-uf7sorut1emo0t7uul8ebco939j4oibi.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBXhLiLvGD7etWISFWWokuoKabHU18ZWzw"
+          "current_key": "AIzaSyDP4ali8ij-kFRSi5Ah7J8h4Dqjc4sE9ds"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "98452995691-uf7sorut1emo0t7uul8ebco939j4oibi.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
