@@ -4,17 +4,17 @@ import 'register.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  const LoginPage({super.key});
 
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
-  FirebaseAuth _auth = FirebaseAuth.instance;
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
-  bool _isRegistering = false;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final bool _isRegistering = false;
   void _signIn() async {
     try {
       UserCredential userCredential = await _auth.signInWithEmailAndPassword(
@@ -140,6 +140,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 50,
                   width: 300,
                   child: ElevatedButton(
+                    onPressed: _isRegistering ? null : _signIn,
                     child: const Text(
                       'Login',
                       style: TextStyle(
@@ -147,7 +148,6 @@ class _LoginPageState extends State<LoginPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    onPressed: _isRegistering ? null : _signIn,
                   ),
                 ),
               ),

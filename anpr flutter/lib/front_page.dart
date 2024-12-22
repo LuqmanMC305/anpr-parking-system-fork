@@ -2,15 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class SignInRegisterScreen extends StatefulWidget {
+  const SignInRegisterScreen({super.key});
+
   @override
   _SignInRegisterScreenState createState() => _SignInRegisterScreenState();
 }
 
 class _SignInRegisterScreenState extends State<SignInRegisterScreen> {
-  FirebaseAuth _auth = FirebaseAuth.instance;
-  TextEditingController _emailController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
-  bool _isRegistering = false;
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final bool _isRegistering = false;
 
   void _signIn() async {
     try {

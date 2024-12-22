@@ -6,7 +6,7 @@ import 'login.dart';
 import 'user_model.dart';
 
 class RegisterPage extends StatefulWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+  const RegisterPage({super.key});
 
   @override
   _RegisterPageState createState() => _RegisterPageState();
@@ -282,7 +282,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           onPressed: _goBackToLogin,
                           style: ButtonStyle(
                             backgroundColor:
-                                MaterialStateProperty.all(Colors.grey),
+                                WidgetStateProperty.all(Colors.grey),
                           ),
                           child: const Text(
                             'Back',
@@ -299,7 +299,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           onPressed: _register,
                           style: ButtonStyle(
                             backgroundColor:
-                                MaterialStateProperty.all(Colors.green),
+                                WidgetStateProperty.all(Colors.green),
                           ),
                           child: const Text(
                             'Register',

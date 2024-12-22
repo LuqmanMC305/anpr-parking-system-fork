@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-import 'register.dart';
 
 import 'login.dart';
 import 'realtime_database_service.dart';
@@ -18,7 +17,7 @@ Future<void> main() async {
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -62,7 +61,7 @@ class IconContainer extends StatefulWidget {
   final IconData icon;
   final String text;
 
-  IconContainer({required this.icon, required this.text});
+  const IconContainer({super.key, required this.icon, required this.text});
 
   @override
   _IconContainerState createState() => _IconContainerState();
@@ -98,7 +97,7 @@ class MyHomePage extends StatefulWidget {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final String userId;
 
-  MyHomePage({required this.userId});
+  MyHomePage({super.key, required this.userId});
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
@@ -472,7 +471,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Text(
-                                        '${data.details}',
+                                        data.details,
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),
